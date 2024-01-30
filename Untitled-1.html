@@ -1,0 +1,169 @@
+<!DOCTYPE html> <!--文档类型说明-->
+<html lang='en'>
+	<head> <!--网页配置-->
+		<meta charset='utf-8'/> <!--文档字符集-->
+		<title>YCY的第一个网页</title>
+		<meta name="Keywords" content="ycy,网页" />
+		<!--网页的关键词-->
+		<meta name="Description"
+			  content="网页设计练习"/>
+		<!--网页描述-->
+		<meta http-equiv="X-UA-Compatible"
+			  content="IE=edge,chrome=1"/>
+		<!--按浏览器版本渲染-->
+		<meta name="viewport"
+			  content="width=device-width,initial-scale=1.0"/>
+		<!--页面大小-->
+		<style>
+			h1{
+				color:skyblue;
+				font-size: 30px;
+			}
+			p{
+				background-color: antiquewhite;
+				color: aliceblue;
+			}
+		</style>
+	</head>
+	<body>
+		<h1 style="color: lightblue">标题</h1>
+		<p>段落</p>
+		<div>
+			<h3>标题3</h3>
+			<p>转义字符</p>
+			<p>空格:&nbsp;&nbsp;&nbsp;&nbsp;&gt;&lt;
+				&amp;&quot;&copy;&reg;
+				&lt;p>&lt;/p><br /><br />
+				&lt;div>&lt;div>
+			</p>
+		</div>
+		
+		<div>
+			<ul style="list-style-type: circle">
+			  <li>小炒肉</li>
+			  <li>小龙虾</li>
+			  <li>剁椒鱼头</li>
+			  <li>酸辣白菜</li>
+			  <li>7分熟牛排</li>
+			</ul>
+			
+			<ol type="A" start='6' reversed>
+			  <li>JavaScript</li>
+			  <li>Python</li>
+			  <li>C/C++</li>
+			  <li>Java</li>
+			</ol>
+			
+			<dl>
+			  <dt>服务支持</dt>
+			  <dd>售后政策</dd>
+			  <dd>关注我们</dd>
+			  <dd>自助服务</dd>
+
+			  <dt>关注我们</dt>
+			  <dd>新浪微博</dd>
+			  <dd>官方微信</dd>
+			  <dd>关于我们</dd>
+			</dl>
+			
+		</div>
+		
+		<div>
+			<img src="地理位置.jpg" /> 
+			<a href="https://www.baidu.com" title="百度官网" target="_blank">百度一下</a>
+		</div>
+		
+		<div>
+			<p>
+				<a href='#phone'>小米手机</a>
+			</p>
+			<p>
+				<h2 id="phone">手机</h2>
+			</p>
+			<a href="#top">顶部</a>&nbsp;&nbsp;&nbsp;
+			<a href="test.doc">doc文档</a>&nbsp;&nbsp;&nbsp;
+			<a href="yangchenyueuibe@163.com">给ycy发邮件</a>
+			还可以插入音频视频
+		</div>
+	
+		<div>
+			<p>
+			  商品价格：
+			  <span>368</span>元，优惠价：<span>298</span>元<br />
+			b标签：<b>定义粗体文本</b> <br /><br />
+			em标签：<em>表示被强调的文本</em> <br /><br />
+			i标签：<i>斜体</i> <br /><br />
+			u标签：<u>定义文本下划线</u> <br /><br />
+			strong标签：<strong>定义加重语气，表示特别重要的文字</strong><br /><br />
+			del标签：<del>定义删除字 </del><br /><br />
+			mark标签：<mark>一段需要被高亮的文本</mark>
+				
+			<pre>
+			  预格式化文本
+
+			  被包围在 pre标签 元素中的文本通常会保留空格和换行符。而文本也会呈现为等宽字体
+
+			  pre 标签的一个常见应用就是用来表示计算机的源代码。
+
+			</pre>
+			<figure>
+				<img src="images/6.webp" alt="" />
+				<figcaption>小米智能家居，智能门锁</figcaption>
+			 </figure>
+			<p>C<sup>+</sup>O<sub>2</sub>
+			</p>
+			
+		</div>
+	
+		<header>
+			<nav>导航</nav>
+		</header>
+		<main>
+			<aside>广告栏</aside>
+			<article>
+				<section>商品1</section>
+				<section>商品2</section>
+			</article>
+		</main>
+		<footer>页脚</footer>
+	
+		<div>
+			<form action="/usr" method="POST">
+				<p>用户名<input type="text"/></p>
+				<p>真实姓名<input type='text' placeholder='请输入您的真实姓名'/></p>
+				<p>所在城市<input type='text' value="四川成都" disabled/></p>
+				<p>请输入密码：<input tye="password"/></p>
+				性别： <input type="radio" name="sex" /> 男 <input type="radio" name="sex" /> 女
+<input type="radio" name="sex" checked /> 保密
+				<label> <input type="radio" name="sex" /> 男 </label>
+<label> <input type="radio" name="sex" /> 女 </label>
+<label> <input type="radio" name="sex" checked /> 保密 </label>
+			兴趣爱好：
+<label>
+  <input type="checkbox" name="hobby" checked value="篮球" /> 篮球
+</label>
+<label> <input type="checkbox" name="hobby" value="乒乓球" /> 乒乓球 </label>
+<label> <input type="checkbox" name="hobby" value="书法" /> 书法 </label>
+<label>
+  <input type="checkbox" name="hobby" value="跑步健身" /> 跑步健身
+</label>
+			</form>
+	请选择 省：
+<select>
+  <option value="湖北省">湖北省</option>
+  <option value="湖南省">湖南省</option>
+  <option value="安徽省">安徽省</option>
+  <option value="陕西省">陕西省</option>
+</select>
+市：
+<select>
+  <option value="西安市">西安市</option>
+</select>
+区：
+<select>
+  <option value="雁塔区">高新区</option>
+</select>
+			用户评论： <textarea cols="100" rows="10"></textarea>
+		</div>
+	</body>
+</html>
